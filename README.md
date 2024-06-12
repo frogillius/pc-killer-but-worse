@@ -1,3 +1,5 @@
+functional? no
+
 # pc-killer
 Kill any windows pc within seconds. Warning- Use it at your own risk, The writer of this script will not be responsible to any damage done to the computer. 
 
